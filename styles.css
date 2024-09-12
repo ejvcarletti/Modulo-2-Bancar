@@ -1,0 +1,90 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(image.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white
+}
+html, body {
+    height: 99%;
+}
+.navbar {
+    margin-top: 0.5rem;
+}
+.navbar-brand {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.nav-link.active {
+    background-color: rgba(0,0,0,0.2);
+}
+.nav-link{
+    font-size: 1.2rem;
+    margin: 0 5px;
+    padding: 3px 10px !important;
+}
+.nav-link:hover{
+    background-color: rgba (0,0,0,0.1);
+}
+a:link, a:visited, a:active {
+color: white;
+}
+a:hover{
+    color: #966023
+}
+#MainLogin {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+@media (max-width: 800px){
+    #MainLogin{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+#MainLogin input {
+    opacity: 0.8;
+    color: black;
+    border-radius: 0;
+}
+#MainLogin input:hover{
+    opacity: 0.9;
+}
+#MainLogin input:focus {
+    opacity: 1;
+}
+#MainLogin input[type='button']{
+    background-color: #966023;
+    border: 1px solid black;
+}
+#MainLogin input[type='button']:hover{
+    color: white;
+    background-color: #B27E44;
+}
+#cobertor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+    animation: 7s refulgir;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes refulgir {
+    0%{
+        background-color: rgba(0,0,0,0.5);
+    }
+    50%{
+        background-color: rgba(0,0,0,0.7);
+    }
+    100%{
+        background-color: rgba(0,0,0,0.5);
+    }
+}
